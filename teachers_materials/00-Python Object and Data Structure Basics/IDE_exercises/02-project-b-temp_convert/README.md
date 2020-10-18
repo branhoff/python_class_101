@@ -1,4 +1,4 @@
-# project-2b
+# 00-02-project-b
 
 Write a program that converts Celsius temperatures to Fahrenheit temperatures.  The formula is:
 

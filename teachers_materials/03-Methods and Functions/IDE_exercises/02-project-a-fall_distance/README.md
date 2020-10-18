@@ -1,4 +1,5 @@
-# project-4a
+# 03-02-project-a
+
 
 **Remember that, as stated in the Code Style Guidelines, all functions in all assignments must have a docstring.**
 
@@ -14,4 +15,4 @@ dist = fall_distance(4.5)
 print(dist)
 ```
 
-The file must be named: fall_distance.py
+

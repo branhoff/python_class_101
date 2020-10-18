@@ -1,4 +1,4 @@
-# project-3b
+# 02-03-project-a
 
 Write a program that asks the user to enter a positive integer, then prints a list of all positive integers that divide that number evenly, **including itself and 1**, in ascending order.  When you run your program, it should match the following format:
 ```

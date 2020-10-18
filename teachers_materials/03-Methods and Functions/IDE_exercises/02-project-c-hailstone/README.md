@@ -1,4 +1,4 @@
-# project-4c
+# 03-02-project-c
 
 A hailstone sequence starts with some positive integer. If that integer is even, then you divide it by two to get the next integer in the sequence, but if it is odd, then you multiply it by three and add one to get the next integer in the sequence. Then you use the value you just generated to find the next value, according to the same rules.  For example, if our initial number is 3, the subsequent numbers will be: 10, 5, 16, 8, 4, 2, 1.
 
@@ -12,4 +12,4 @@ print(answer)
 
 You cannot use recursion, since we haven't covered that technique.  That means that for this assignment you cannot have your function call itself.
 
-The file must be named: **hailstone.py**
+

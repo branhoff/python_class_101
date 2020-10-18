@@ -1,4 +1,4 @@
-# project-3c
+# 02-04-project-b
 
 Write a program that prompts the user for an integer that the player (maybe the user, maybe someone else) will try to guess.  If the player's guess is higher than the target number, the program should display "too high"  If the user's guess is lower than the target number, the program should display "too low"  The program should use a loop that repeats until the user correctly guesses the number.  Then the program should print how many guesses it took.  When you run your program it should match the following format:
 ```
