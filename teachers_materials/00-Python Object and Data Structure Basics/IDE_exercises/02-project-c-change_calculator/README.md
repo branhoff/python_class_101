@@ -1,4 +1,4 @@
-# project-2c
+# 00-02-project-b
 
 Write a program that asks the user for a (integer) number of cents, from 0 to 99, and outputs how many of each type of coin would represent that amount with the fewest total number of coins.  When you run your program, it should match the following format:
 ```
