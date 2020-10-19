@@ -5,7 +5,9 @@
 
 
 def fall_distance(t):
-    '''takes input in seconds and returns distance object has fallen'''
+    """
+     takes input in seconds and returns the distance object has fallen in metres
+    """
     g = 9.8 # velocity
 
     return 0.5 * g * t*t
