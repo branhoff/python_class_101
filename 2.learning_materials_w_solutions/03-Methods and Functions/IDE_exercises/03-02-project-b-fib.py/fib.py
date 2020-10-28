@@ -6,7 +6,6 @@ def fib(n):
     """
     calculate a fibonnaci number given the input 'n' without recursion or using the golden ratio
     """
-
     prev_num = 0
     curr_num = 1
     sol = 1
