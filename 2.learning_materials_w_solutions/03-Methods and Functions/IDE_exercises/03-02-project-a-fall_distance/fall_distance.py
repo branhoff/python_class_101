@@ -1,7 +1,7 @@
 # Author: Brandon Hoffman
 # Date: 10/17/2020
-# Description: created a function called "fall_distance() that takes an input of seconds and returns
-#              the distance an object has fallen."
+# Description: created a function called "fall_distance()" that takes an input of seconds and returns
+#              the distance an object has fallen.
 
 
 def fall_distance(t):
