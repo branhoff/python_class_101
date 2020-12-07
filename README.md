@@ -22,3 +22,12 @@ Here's my preferred study order for the pure basics:
 6. Tuples and Lists
 7. Dictionaries
 8. Classes and Methods
+
+## TODO:
+* add exercise to count occurence of vowels in string
+* add exercise to count occurence of set of strings in total strings
+* add exercise that prints the longest substring of string s in which letters occur in alphabetical order
+* Add Jupyter notebook run explanations to 01b
+* Add "tools you will need" jupyter notebook or README
+* Finish 7b presentation...
+
