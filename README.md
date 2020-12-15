@@ -30,4 +30,5 @@ Here's my preferred study order for the pure basics:
 * Add Jupyter notebook run explanations to 01b
 * Add "tools you will need" jupyter notebook or README
 * Finish 7b presentation...
+* Finish 7ba Notes
 
