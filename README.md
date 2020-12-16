@@ -30,5 +30,6 @@ Here's my preferred study order for the pure basics:
 * Add Jupyter notebook run explanations to 01b
 * Add "tools you will need" jupyter notebook or README
 * Finish 7b presentation...
-* Finish 7ba Notes
+* Finish 7b Notes by adding the pictures
+*   https://stackoverflow.com/questions/32370281/how-to-embed-image-or-picture-in-jupyter-notebook-either-from-a-local-machine-o
 
