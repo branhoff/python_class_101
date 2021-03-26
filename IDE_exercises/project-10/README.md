@@ -31,4 +31,4 @@ board.make_move(2,2,1,1,1,0)
 board.make_move(0,1,1,0,2,0)
 board.get_current_state()
 ```
-Your file must be named: BuildersGame.py
+Your file should be named: BuildersGame.py

@@ -16,4 +16,4 @@ print(result["100"].get_name())
 
 Remember in your testing that printing an object of a user-defined class will just print out the object's type and address in memory.  If you want to print the values of its data members, you need to call its get functions, as shown in the print statement above.
 
-The file must be named: make_employee_dict.py
+The file should be named: make_employee_dict.py

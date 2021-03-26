@@ -9,4 +9,4 @@ square_list(nums)
 print(nums)  # This should print [49, 9, 144, 81]
 ```
 
-The file must be named: square_list.py
+The file should be named: square_list.py

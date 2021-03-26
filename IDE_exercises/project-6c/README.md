@@ -15,4 +15,4 @@ person_list = [p1, p2, p3]
 answer = std_dev(person_list)
 ```
 
-The file must be named: std_dev.py
+The file should be named: std_dev.py

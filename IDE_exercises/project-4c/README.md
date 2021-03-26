@@ -12,4 +12,4 @@ print(answer)
 
 You cannot use recursion, since we haven't covered that technique.  That means that for this assignment you cannot have your function call itself.
 
-The file must be named: **hailstone.py**
+The file should be named: **hailstone.py**

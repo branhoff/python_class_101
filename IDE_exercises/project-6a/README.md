@@ -8,4 +8,4 @@ some_nums = [13,7,-3,82,4]
 result = find_median(some_nums)
 ```
 
-The file must be named: find_median.py
+The file should be named: find_median.py

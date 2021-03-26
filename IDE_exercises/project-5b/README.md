@@ -11,4 +11,4 @@ cab.move_x(-1)             # moves cab 1 unit "left"
 print(cab.get_odometer())  # prints the current odometer reading
 ```
 
-The file must be named: Taxicab.py
+The file should be named: Taxicab.py

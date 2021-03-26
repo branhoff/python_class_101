@@ -9,4 +9,4 @@ term = fib(17)
 
 You cannot use recursion, since we haven't covered that technique.  That means that for this assignment you cannot have your function call itself.  You must use a loop to step through the sequence - do not use the golden ratio to directly calculate the value.
 
-The file must be named fib.py
+The file should be named fib.py

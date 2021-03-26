@@ -11,4 +11,4 @@ The factors of 12 are:
 6
 12
 ```
-The file must be named: factors.py
+The file should be named: factors.py

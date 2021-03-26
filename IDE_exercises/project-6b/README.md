@@ -8,4 +8,4 @@ Then the list that is returned should be:
 ```
 ['Kiki Kardashian', 'Krystal Kardashian', 'Koala Kardashian']
 ```
-The file must be named: add_surname.py
+The file should be named: add_surname.py

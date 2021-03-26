@@ -11,4 +11,4 @@ then the dictionary that is returned should contain these key-value pairs:
 
 And no, we haven't covered the isalpha() funciton, so don't use it.
 
-The file must be named: count_letters.py
+The file should be named: count_letters.py

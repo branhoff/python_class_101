@@ -11,4 +11,4 @@ So, 7 * 4 = 7 + (7 + (7 + (7)))
 
 **Your code must not contain any loops.**
 
-The file must be named: multiply.py
+The file should be named: multiply.py

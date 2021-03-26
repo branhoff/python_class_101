@@ -11,4 +11,4 @@ Please enter five numbers.
 The average of those numbers is:
 22.7
 ```
-The file must be named: average.py
+The file should be named: average.py

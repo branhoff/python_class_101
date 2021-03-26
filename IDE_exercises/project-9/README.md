@@ -20,4 +20,4 @@ game.make_move("second", 5)
 result = game.make_move("first", 7)
 state = game.get_current_state()
 ```
-Your file must be named: AddThreeGame.py
+Your file should be named: AddThreeGame.py

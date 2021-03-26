@@ -13,4 +13,4 @@ The equivalent Fahrenheit temperature is:
 ```
 Don't worry if your program says that -10.5 Celsius is very, very close to, but not exactly, 13.1.  Your result only needs to match to 7 decimal places.  For example, 13.0999999999 would count as correct.
 
-The file must be named: temp_convert.py
+The file should be named: temp_convert.py

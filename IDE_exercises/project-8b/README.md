@@ -14,4 +14,4 @@ Here's one simple example of how words_in_both() might be used:
 common_words = words_in_both("She's a jack of all trades", 'Jack was tallest of all')
 ```
 
-The file must be named: words_in_both.py
+The file should be named: words_in_both.py
