@@ -17,13 +17,13 @@ Practice makes perfect. Effective practice problems dedicated to every learning 
 Please consider adding a README outlining a problem and also providing a corresponding .py file solution. Pleae also consider reviewing other solutions and adapting them to improve readability and good programming practice. Please remember that this is a programming principles course. Not a optimal list comprehension course... Let's focus on generally good, multi-language programming principles covered here.
 
 ## TODO:
-* add exercise to count occurence of vowels in string
-* add exercise to count occurence of set of strings in total strings
-* add exercise that prints the longest substring of string s in which letters occur in alphabetical order
-* Add Jupyter notebook run explanations to 01b
-* Add "tools you will need" jupyter notebook or README
-* Finish 7b presentation...
-* Finish 7b Notes by adding the pictures
-* Add tests for IDE project solutions
-*   https://stackoverflow.com/questions/32370281/how-to-embed-image-or-picture-in-jupyter-notebook-either-from-a-local-machine-o
+* [ ] Add exercise to count occurence of vowels in string
+* [ ] Add exercise to count occurence of set of strings in total strings
+* [ ] Add exercise that prints the longest substring of string s in which letters occur in alphabetical order
+* [ ] Add Jupyter notebook run explanations to 01b
+* [ ] Add "tools you will need" jupyter notebook
+* [ ] Finish 7b presentation...
+* [ ] Finish 7b Notes by adding the pictures
+* [ ] Add tests for IDE project solutions
+* [ ] Update embedded images in Jupyter notebooks. [Reference](https://stackoverflow.com/questions/32370281/how-to-embed-image-or-picture-in-jupyter-notebook-either-from-a-local-machine-o)
 
