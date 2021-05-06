@@ -36,21 +36,35 @@ class AddThreeGame:
         """
         return self._current_state
 
+    def get_player_turn(self):
+        """
+
+        """
+
+        return self._player_turn
+        
+    def get_player_choices(self):
+        """
+
+        """
+        
+        if self._player_turn == "first":
+            n = 0
+        elif self._player_turn == "second":
+            n = 1
+
+        return self._nums_chosen[n::2]
 
     def _set_current_state(self):
         """
         private method that will update the current state depending on the state of the
         most current score and which player's turn it is
         """
-        if self._player_score == 15:
-            if self._player_turn == 'first':
-                self._current_state = "FIRST_WON"
-            else:
-                self._current_state = "SECOND_WON"
+        if self._check_score(self.get_player_choices()):
+            self._current_state = self.get_player_turn().upper() + '_' + 'WON'
         
         elif len(self._nums_chosen) == 9:
-            self._current_state = "DRAW"
-
+            self._current_state = 'DRAW'
 
     def _set_player_turn(self):
         """
@@ -62,17 +76,24 @@ class AddThreeGame:
         else:
             self._player_turn = "first"
 
-    def _set_player_score(self):
-        """
-        private method to update the latest score depending on which player's turn it is
-        """
-        if self._player_turn == 'first':
-            n = 0
+    
 
-        elif self._player_turn == 'second':
-            n = 1
+    def _check_score(self, arr):
+        if len(arr) < 3:
+            return False
+        
+        choices = set(arr)
+        for i in range(len(arr) -1):
+            for j in range(i + 1, len(arr)):
+                solution = 15 - (arr[i] + arr[j])
+            
+            if solution in choices and solution not in [arr[i], arr[j]]:
+                return True
+            else:
+                return False
 
-        self._player_score = sum(self._nums_chosen[n::2])
+
+
 
     def make_move(self, player, num_choice):
         """
@@ -94,7 +115,6 @@ class AddThreeGame:
 
         else:
             self._nums_chosen.append(num_choice)
-            self._set_player_score()
             self._set_current_state()
             self._set_player_turn()
             
