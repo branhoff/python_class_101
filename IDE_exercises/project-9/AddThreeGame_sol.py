@@ -38,13 +38,13 @@ class AddThreeGame:
 
     def get_player_turn(self):
         """
-
+        returns player turn private variable
         """
         return self._player_turn
         
     def get_player_choices(self):
         """
-
+        returns array of player choices for first or second player, depending on instance of player turn
         """
         if self._player_turn == "first":
             n = 0
@@ -74,8 +74,6 @@ class AddThreeGame:
         else:
             self._player_turn = "first"
 
-    
-
     def _check_score(self, arr):
         if len(arr) < 3:
             return False
@@ -89,9 +87,6 @@ class AddThreeGame:
                 return True
             else:
                 return False
-
-
-
 
     def make_move(self, player, num_choice):
         """
