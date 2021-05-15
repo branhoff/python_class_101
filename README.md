@@ -18,6 +18,7 @@ Please consider adding a README outlining a problem and also providing a corresp
 
 ## TODO:
 * [x] Fix exercise 9 solution and update test for for edge cases of different combinations of 4 or 5 choices that result in solution
+* [ ] Update Variable and Assignment Modules to teach and require type hinting
 * [ ] Add exercise to count occurence of vowels in string
 * [ ] Add exercise to count occurence of set of strings in total strings
 * [ ] Add exercise that prints the longest substring of string s in which letters occur in alphabetical order
