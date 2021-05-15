@@ -40,14 +40,12 @@ class AddThreeGame:
         """
 
         """
-
         return self._player_turn
         
     def get_player_choices(self):
         """
 
         """
-        
         if self._player_turn == "first":
             n = 0
         elif self._player_turn == "second":
