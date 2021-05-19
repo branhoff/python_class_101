@@ -8,7 +8,7 @@ Please enter five numbers.
 7.0
 134.8
 -20.0
-The average of those numbers is:
+The calculated average of those numbers is:
 23.7
 ```
 The file should be named: calculate_average.py
