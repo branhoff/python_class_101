@@ -1,10 +1,7 @@
 # project-3a
 
-Write a Python program that asks the users how many number they would like to enter, 
-where the users need to enter at least one number, and the program will then prompt the user to enter that many numbers. 
-Once the user has entered all the numbers, the program should output the largest and smallest of those numbers.
-You are not permitted to use any data structures or any material we have not covered, and the program should follow this 
-format when it is executed:
+Write a Python program that asks the users how many number they would like to enter, where the users need to enter at least one number, and then prompt the user to enter that many numbers. Once the user has entered all the numbers, the program should output the largest and smallest of those numbers
+(You are not permitted to use any data structures or any materials we have not covered). The program should follow this format when it is executed:
 ```
 How many numbers would you like to enter?
 3

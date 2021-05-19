@@ -15,19 +15,17 @@ else:
     min = first_int
     max = first_int
 
-    count = 1
-
     # if the number of ints requested by user is greater than one, we'll initialize
     # a while loop
 
-    while count < num_int:
+    while num_int > 1:
         n = int(input())
         if n < min:
             min = n
         if n > max:
             max = n
 
-        count += 1
+        num_int -= 1
 
     print("min:", min)
     print("max:", max)
