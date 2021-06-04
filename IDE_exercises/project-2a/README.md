@@ -1,14 +1,14 @@
 # project-2a
 
-Write a program that asks the user for five numbers and then prints out the average of those numbers.  When you run your program, it should match the following format:
+Write a program in Python to input 5 numbers from keyboard and then calculates the average of those numbers. The program should accept negative as well as negative input and should match the following format when it is executed:
 ```
 Please enter five numbers.
--2.4
-5.1
-6.0
-123.8
--19.0
-The average of those numbers is:
-22.7
+-5.4
+2.1
+7.0
+134.8
+-20.0
+The calculated average of those numbers is:
+23.7
 ```
-The file should be named: average.py
+The file should be named: calculate_average.py

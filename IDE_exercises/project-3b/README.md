@@ -1,6 +1,7 @@
 # project-3b
 
-Write a program that asks the user to enter a positive integer, then prints a list of all positive integers that divide that number evenly, **including itself and 1**, in ascending order.  When you run your program, it should match the following format:
+Write a Python program that prompts the user to enter a positive integer, then output all the positive integers that divisible by that number, including itself and 1, in ascending order. 
+The program should match the following format when it is executed:
 ```
 Please enter a positive integer: 12
 The factors of 12 are:
@@ -11,4 +12,4 @@ The factors of 12 are:
 6
 12
 ```
-The file should be named: factors.py
+The file should be named: find_factors.py

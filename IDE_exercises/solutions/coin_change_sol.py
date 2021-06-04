@@ -3,7 +3,7 @@
 # Description: Asks the user for int  of cents less than $1 and returns
 #              breakout of coin denominations with fewest number of coins
 
-print("Please enter an amount in cents less than a dollar.")
+print("Please enter an amount between 0 and 99 cents.")
 
 coins = int(input())
 

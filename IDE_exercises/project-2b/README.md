@@ -1,16 +1,18 @@
 # project-2b
 
-Write a program that converts Celsius temperatures to Fahrenheit temperatures.  The formula is:
+Write a Python program to convert from Celsius to Fahrenheit using the following fomular:
 
 F = (9/5)C + 32
 
-where F is the Fahrenheit temperature and C is the Celsius temperature.  The program should prompt the user to input a Celsius temperature and should display the corresponding Fahrenheit temperature.  It should display only the converted temperature on its own line without additional text (such as an 'F').  When you run your program, it should match the following format:
-```
-Please enter a Celsius temperature.
--10.5
-The equivalent Fahrenheit temperature is:
-13.1
-```
-Don't worry if your program says that -10.5 Celsius is very, very close to, but not exactly, 13.1.  Your result only needs to match to 7 decimal places.  For example, 13.0999999999 would count as correct.
+where F is Fahrenheit and C is Celsius. The program should take an input from the user in 
+Celsius and outputs the corresponding temperature in Fahrenheit. When you run your program, it should match the following format:
 
-The file should be named: temp_convert.py
+```
+Please enter the temperature in Celsius.
+34.5
+The corresponding temperature in Fahrenheit is:
+94.1
+```
+Your result only needs to match to 7 decimal places and does not to be exact. For example, 13.0999999999 is considered correct.
+
+The file should be named: temp_conversion.py
