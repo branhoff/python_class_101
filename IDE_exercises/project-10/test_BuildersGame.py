@@ -41,41 +41,41 @@ class TestBuildersGame(unittest.TestCase):
     def test_no_illegal_moves_o_wins(self):
         # No errors, O wins
         game = BuildersGame()
-        self.assertEqual(game_2.initial_placement(2,2,1,2,'x'),True)
-        self.assertEqual(game_2.initial_placement(0,1,4,2,'o'),True)
-        self.assertEqual(game_2.get_current_state(),"UNFINISHED")
+        self.assertEqual(game.initial_placement(2,2,1,2,'x'),True)
+        self.assertEqual(game.initial_placement(0,1,4,2,'o'),True)
+        self.assertEqual(game.get_current_state(),"UNFINISHED")
 
-        self.assertEqual(game_2.make_move(2,2,1,1,1,0),True)
-        self.assertEqual(game_2.make_move(0,1,1,0,2,0),True)
-        self.assertEqual(game_2.get_current_state(),"UNFINISHED")
+        self.assertEqual(game.make_move(2,2,1,1,1,0),True)
+        self.assertEqual(game.make_move(0,1,1,0,2,0),True)
+        self.assertEqual(game.get_current_state(),"UNFINISHED")
 
-        self.assertEqual(game_2.make_move(1,1,0,1,1,1),True)
-        self.assertEqual(game_2.make_move(1,0,1,1,2,0),True)
-        self.assertEqual(game_2.get_current_state(),"UNFINISHED")
+        self.assertEqual(game.make_move(1,1,0,1,1,1),True)
+        self.assertEqual(game.make_move(1,0,1,1,2,0),True)
+        self.assertEqual(game.get_current_state(),"UNFINISHED")
 
-        self.assertEqual(game_2.make_move(0,1,1,0,2,0),True)
-        self.assertEqual(game_2.make_move(1,1,2,1,1,1),True)
-        self.assertEqual(game_2.get_current_state(),"UNFINISHED")
+        self.assertEqual(game.make_move(0,1,1,0,2,0),True)
+        self.assertEqual(game.make_move(1,1,2,1,1,1),True)
+        self.assertEqual(game.get_current_state(),"UNFINISHED")
 
-        self.assertEqual(game_2.make_move(1,0,0,0,0,1),True)
-        self.assertEqual(game_2.make_move(2,1,1,0,0,1),True)
-        self.assertEqual(game_2.get_current_state(),"UNFINISHED")
+        self.assertEqual(game.make_move(1,0,0,0,0,1),True)
+        self.assertEqual(game.make_move(2,1,1,0,0,1),True)
+        self.assertEqual(game.get_current_state(),"UNFINISHED")
 
-        self.assertEqual(game_2.make_move(1,2,1,3,1,4),True)
-        self.assertEqual(game_2.make_move(1,0,1,1,1,0),True)
-        self.assertEqual(game_2.get_current_state(),"UNFINISHED")
+        self.assertEqual(game.make_move(1,2,1,3,1,4),True)
+        self.assertEqual(game.make_move(1,0,1,1,1,0),True)
+        self.assertEqual(game.get_current_state(),"UNFINISHED")
 
-        self.assertEqual(game_2.make_move(1,3,1,4,1,3),True)
-        self.assertEqual(game_2.make_move(1,1,2,0,1,1),True)
-        self.assertEqual(game_2.get_current_state(),"O_WON")
+        self.assertEqual(game.make_move(1,3,1,4,1,3),True)
+        self.assertEqual(game.make_move(1,1,2,0,1,1),True)
+        self.assertEqual(game.get_current_state(),"O_WON")
 
         # X plays after O Wins
-        self.assertEqual(game_2.make_move(1,3,2,4,1,3),False)
-        self.assertEqual(game_2.get_current_state(),"O_WON")
+        self.assertEqual(game.make_move(1,3,2,4,1,3),False)
+        self.assertEqual(game.get_current_state(),"O_WON")
 
         # O plays after X Wins
-        self.assertEqual(game_2.make_move(1,0,2,0,1,0),False)
-        self.assertEqual(game_2.get_current_state(),"O_WON")
+        self.assertEqual(game.make_move(1,0,2,0,1,0),False)
+        self.assertEqual(game.get_current_state(),"O_WON")
 
     def test_x_intiates_twice(self):
         # Intiate X twice
