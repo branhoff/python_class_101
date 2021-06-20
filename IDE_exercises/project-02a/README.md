@@ -1,4 +1,4 @@
-# project-2a
+# project-02a
 
 Write a program in Python to input 5 numbers from keyboard and then calculates the average of those numbers. The program should accept negative as well as negative input and should match the following format when it is executed:
 ```

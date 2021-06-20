@@ -1,4 +1,4 @@
-# project-6c
+# project-06c
 
 Write a class called Person that has two **private** data members - the person's name and age.  It should have an init method that takes two values and uses them to initialize the data members.  It should have a get_age method.
 

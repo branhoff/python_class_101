@@ -1,4 +1,4 @@
-# project-1
+# project-01
 
 Create a Python file named my_color.py.  Type the following code into the file, but with **your name** and the **current date**:
 ```

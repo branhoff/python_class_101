@@ -1,4 +1,4 @@
-# project-3c
+# project-03c
 
 Write a Python program that takes in an integer that a player will attempt to guess. The program should display "too high" if the guess is higher and "too lower" if the guess is lower. The program will not stop unless the player guesses the correct integer and print out the number of guesses the player took. The program should executed as follow:
 

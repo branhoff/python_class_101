@@ -1,4 +1,4 @@
-# project-2b
+# project-02b
 
 Write a Python program to convert from Celsius to Fahrenheit using the following fomular:
 

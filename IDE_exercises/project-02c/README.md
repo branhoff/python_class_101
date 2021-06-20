@@ -1,4 +1,4 @@
-# project-2c
+# project-02c
 
 Write a Python program that prompts the user for a (integer) number of cents, from 0 to 99, and calculates the least number of coins required to make change.  When your program is executed, it should match the following format:
 ```

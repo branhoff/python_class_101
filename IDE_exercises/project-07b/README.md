@@ -1,4 +1,4 @@
-# project-7b
+# project-07b
 
 Write a function named reverse_list that takes as a parameter a list and and reverses the order of the elements in that list. It should not return anything - it should mutate the original list.  This can be done trivially using slices, but **your function must not use any slicing**.
 

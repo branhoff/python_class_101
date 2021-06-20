@@ -1,4 +1,4 @@
-# project-4c
+# project-04c
 
 A hailstone sequence begins with a positive integer. 
 If the integer is even, divide it by two to get the next integer in the sequence, but if it is odd, multiply it by three and add one to get the next integer in the sequence. 

@@ -1,4 +1,4 @@
-# project-4b
+# project-04b
 
 The first and second numbers in the Fibonacci sequence are both 1. 
 After that, each subsequent number is the sum of the two previous numbers. 
