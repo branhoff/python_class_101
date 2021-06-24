@@ -1,6 +1,7 @@
 # project-07a
 
-Write a function named square_list that takes as a parameter a list of numbers and replaces each value with the square of that value. It should not return anything - it should mutate the original list.
+Write a Python function called square_list that takes a list of numbers as parameter and replaces each value with the square of that value. 
+It should not return anything - it should mutate the original list.
 
 Your function could be used like this:
 ```

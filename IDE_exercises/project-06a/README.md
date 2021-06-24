@@ -1,11 +1,12 @@
 # project-06a
 
-Write a function named find_median that takes as a parameter a list of numbers.  The function should return the median of those numbers, which will require it to sort the list.  If you're not familiar with calculating the median, please look that up.  Remember that the calculation is different for odd and even groups of values.
+Write a Python function named find_median that takes a list of number as argument and return the median of those numbers.
+You will need to sort the list in order to find the median. Please look up on how to find median if you're not familiar with the logic
 
 For example, it could be used like this:
 ```
-some_nums = [13,7,-3,82,4]
-result = find_median(some_nums)
+list_of_nums = [13,7,-3,82,4]
+result = find_median(list_of_nums)
 ```
 
 The file should be named: find_median.py

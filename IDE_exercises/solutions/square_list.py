@@ -1,7 +1,6 @@
 # Author: Brandon Hoffman
 # Date: 10/29/2020
 # Description: Mutates a given list and squares the items in the list
-import os
 
 def square_list(lst):
     """
@@ -11,5 +10,3 @@ def square_list(lst):
 
     for i in range(len(lst)-1):
         lst[i] **= 2
-
-print(os.getcwd())
