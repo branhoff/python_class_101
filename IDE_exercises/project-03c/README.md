@@ -16,4 +16,4 @@ You guessed it in 4 tries.
 ```
 If the user guesses the number in 1 try, then your program should print "You guessed it in 1 try."
 
-The file should be named: guess_numb.py
+The file should be named: guess_num.py
