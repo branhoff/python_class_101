@@ -1,7 +1,11 @@
+# personal directories
 lecture_slides
 pictures
 old_lessons
 Getting Started.docx
+
+# settings and other directoreis
 __pycache__/
 .ipynb_checkpoints/
 .idea/
+.vscode/
