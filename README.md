@@ -17,13 +17,10 @@ Practice makes perfect. Effective practice problems dedicated to every learning 
 Please consider adding a README outlining a problem and also providing a corresponding .py file solution. Pleae also consider reviewing other solutions and adapting them to improve readability and good programming practice. Please remember that this is a programming principles course. Not a optimal list comprehension course... Let's focus on generally good, multi-language programming principles covered here.
 
 ## TODO:
-* [x] Fix exercise 9 solution and update test for for edge cases of different combinations of 4 or 5 choices that result in solution
 * [ ] Update Variable and Assignment Modules to teach and require type hinting
 * [ ] Add exercise to count occurence of vowels in string
 * [ ] Add exercise to count occurence of set of strings in total strings
 * [ ] Add exercise that prints the longest substring of string s in which letters occur in alphabetical order
-* [ ] Add Jupyter notebook run explanations to 01b
-* [ ] Add "tools you will need" jupyter notebook
 * [ ] Finish 7b presentation...
 * [ ] Finish 7b Notes by adding the pictures
 * [ ] Add tests for IDE project solutions
