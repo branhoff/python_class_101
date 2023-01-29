@@ -11,6 +11,9 @@ Lesson notebooks are arranged by topic. Each notebook contains explanations and 
 
 Each lesson set has a corresponding "IDE Exercise". This is a project with a larger scope that you should practice building in the IDE of your choice. I'm generally assuming you're using VS Code as your IDE in the included notes. A README is included with each IDE exercise giving the explanation.
 
+## How to get started
+Navigate to the [01-lesson_notebooks/01a-Tools_You_Will_Need.ipynb](01-lesson_notebooks/01a-Tools_You_Will_Need.ipynb)
+
 ## How you can help
 Practice makes perfect. Effective practice problems dedicated to every learning concept is important. While expository material and explanations given in the Jupyter Notebooks can certainly be adapted and improved, providing more "IDE Practice Problems" is themost needed ask.
 

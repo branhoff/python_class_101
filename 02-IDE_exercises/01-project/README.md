@@ -1,6 +1,8 @@
 # project-01
 
-Create a Python file named my_color.py.  Type the following code into the file, but with **your name** and the **current date**:
+This project will test that you can create and run a python module.
+
+Create a Python file named my_color.py in the same directory as this `README`.  Type the following code into the file, but with **your name** and the **current date**:
 ```
 # Author: Brandon Hoffman
 # Date: 04/15/1865
@@ -10,4 +12,4 @@ Create a Python file named my_color.py.  Type the following code into the file, 
 fave_color = input("Please enter your favorite color: ")
 print("Your favorite color is  " + fave_color + ".")
 ```
-Now save the file ("File/Save All") and run it.  The program should ask you to enter the name of your favorite animal, and after you do, it will print out "Your favorite color is \<whatever you typed\>."
+Now save the file ("File/Save All") and run it.  The program should ask you to enter the name of your favorite color, and after you do, it will print out "Your favorite color is \<whatever you typed\>."
