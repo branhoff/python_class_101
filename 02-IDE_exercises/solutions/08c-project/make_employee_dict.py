@@ -9,7 +9,7 @@ class Employee:
     Represents fundamental characteristics of an employee of a company
     """
 
-    def __init__(self, name, ID_number, salary, email_address):
+    def __init__(self, name, ID_number, salary, email_address) -> None:
         """
         Creates an Employeee object with name, ID_number, salary, and email_address values
         """
@@ -18,31 +18,32 @@ class Employee:
         self._salary = salary
         self._email_address = email_address
 
-    def get_name(self):
+    def get_name(self) -> str:
         """
         returns employee name
         """
         return self._name
-    
-    def get_ID_number(self):
+
+    def get_ID_number(self) -> int:
         """
         returns employee ID number
         """
         return self._ID_number
 
-    def get_salary(self):
+    def get_salary(self) -> float:
         """
         returns employee salary
         """
         return self._salary
 
-    def get_email_address(self):
+    def get_email_address(self) -> str:
         """
         returns employee email_address
         """
         return self._email_address
 
-def make_employee_dict(names, id_nums, salaries, email_addresses):
+
+def make_employee_dict(names, id_nums, salaries, email_addresses) -> dict[int, Employee]:
     """
     Input: 4 lists of names, id numbers, salaries, and email_addresses of equal length
     Output: a dictionary where the id num is the key and the Employee object the value

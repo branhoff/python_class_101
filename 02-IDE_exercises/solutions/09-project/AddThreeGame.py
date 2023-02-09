@@ -18,7 +18,7 @@ class AddThreeGame:
     then the game ends in a draw.
     """
 
-    def __init__(self):
+    def __init__(self) -> None:
         """
         intializes 4 private variables to be used throughout the Class
         """
@@ -27,8 +27,7 @@ class AddThreeGame:
         self._player_turn = "first"
         self._player_score = 0
 
-
-    def get_current_state(self):
+    def get_current_state(self) -> None:
         """
         get method to allow user to see the state of the game.
         Input: VOID
@@ -36,13 +35,13 @@ class AddThreeGame:
         """
         return self._current_state
 
-    def get_player_turn(self):
+    def get_player_turn(self) -> None:
         """
         returns player turn private variable
         """
         return self._player_turn
-        
-    def get_player_choices(self):
+
+    def get_player_choices(self) -> None:
         """
         returns array of player choices for first or second player, depending on instance of player turn
         """
@@ -60,7 +59,7 @@ class AddThreeGame:
         """
         if self._check_score(self.get_player_choices()):
             self._current_state = self.get_player_turn().upper() + '_' + 'WON'
-        
+
         elif len(self._nums_chosen) == 9:
             self._current_state = 'DRAW'
 
@@ -70,19 +69,19 @@ class AddThreeGame:
         """
         if self._player_turn == "first":
             self._player_turn = "second"
-        
+
         else:
             self._player_turn = "first"
 
-    def _check_score(self, arr):
+    def _check_score(self, arr) -> bool:
         if len(arr) < 3:
             return False
-        
+
         choices = set(arr)
-        for i in range(len(arr) -1):
+        for i in range(len(arr) - 1):
             for j in range(i + 1, len(arr)):
                 solution = 15 - (arr[i] + arr[j])
-            
+
             if solution in choices and solution not in [arr[i], arr[j]]:
                 return True
             else:
@@ -96,10 +95,10 @@ class AddThreeGame:
         """
         if self._current_state != "UNFINISHED":
             return False
-        
+
         if player != self._player_turn:
             return False
-            
+
         if 9 < num_choice or num_choice < 1:
             return False
 
@@ -110,5 +109,5 @@ class AddThreeGame:
             self._nums_chosen.append(num_choice)
             self._set_current_state()
             self._set_player_turn()
-            
+
             return True

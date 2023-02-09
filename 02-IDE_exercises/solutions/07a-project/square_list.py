@@ -8,5 +8,13 @@ def square_list(lst):
     Doesn't return anything, mutates given list
     """
 
-    for i in range(len(lst)-1):
+    for i in range(len(lst)):
         lst[i] **= 2
+
+
+# Testing
+
+numb_lists: list[int] = [1, 2, 3, 4]
+square_list(numb_lists)
+print(numb_lists)  # This should print [1, 4, 9, 4]
+
