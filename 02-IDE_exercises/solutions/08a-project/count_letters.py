@@ -3,7 +3,7 @@
 # Description: creates a function called count_letters that takes as a parameter a string
 #              and returns a dictionary that tabulates how many of each letter is in that string.
 
-def count_letters(string) -> dict[str, int]:
+def count_letters(string: str) -> dict[str, int]:
     """
     Input: a string
     Output: a dictionary with the key as a capital letter and the value as the count
@@ -11,7 +11,7 @@ def count_letters(string) -> dict[str, int]:
     """
 
     letter_counts: dict[str, int] = {}
-
+    c: str
     for c in string:
 
         if 'A' <= c.upper() <= 'Z':

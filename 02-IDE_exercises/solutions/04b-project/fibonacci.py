@@ -9,6 +9,7 @@ def fib(n) -> int:
     curr_num: int = 1
     sol: int = 1
     print("The numbers in fibonacci series are : ")
+    i:  int
     for i in range(n - 1):
         sol = curr_num + prev_num
         prev_num = curr_num

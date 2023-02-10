@@ -34,14 +34,14 @@ class Taxicab:
         """
         return self._odometer
 
-    def move_x(self, x_vector) -> None:
+    def move_x(self, x_vector: float) -> None:
         """
         takes in a one-dimensional vector and adds it to the x coordiante as its original value and the odometer as an absolute value
         """
         self._x += x_vector
         self._odometer += abs(x_vector)
 
-    def move_y(self, y_vector) -> None:
+    def move_y(self, y_vector: float) -> None:
         """
         takes in a one-dimensional vector and adds it to the x coordiante as its original value and the odometer as an absolute value
         """

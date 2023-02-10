@@ -2,7 +2,7 @@
 # Date: 11/14/2020
 # Description: Takes in two strings and returns a set of common words
 
-def words_in_both(string_1, string_2) -> set[str]:
+def words_in_both(string_1: str, string_2: str) -> set[str]:
     """
     Input: two strings
     Output: a set of common words between the two strings

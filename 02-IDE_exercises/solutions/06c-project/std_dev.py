@@ -9,7 +9,7 @@ class Person:
     Represents a person
     """
 
-    def __init__(self, name, age) -> None:
+    def __init__(self, name: str, age: int) -> None:
         """
         Intializes a person's name and age
         """
@@ -23,27 +23,28 @@ class Person:
         return self._age
 
 
-def std_dev(person_list) -> float:
+def std_dev(person_list: list[str]) -> float:
     """
     Takes in a list of 'Person' objects and returns the standard deviation of their ages
     """
-    age_sum = 0
+    age_sum: int = 0
+    person: str
     for person in person_list:
         age_sum += person.get_age()
 
-    avg = age_sum / len(person_list)
+    avg: float = age_sum / len(person_list)
 
-    variance = 0
+    variance: float = 0
     for person in person_list:
         variance += (person.get_age() - avg) ** 2
 
-    stdv = (variance / len(person_list)) ** 0.5
+    stdv: float = (variance / len(person_list)) ** 0.5
 
     return stdv
 
 
-person1 = Person("Katie", 73)
-person2 = Person("Tran", 24)
-person3 = Person("Hanna", 48)
+person1: Person = Person("Katie", 73)
+person2: Person = Person("Tran", 24)
+person3: Person = Person("Hanna", 48)
 person_list: list[Person] = [person1, person2, person3]
 print(std_dev(person_list))

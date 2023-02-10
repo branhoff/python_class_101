@@ -22,10 +22,10 @@ class AddThreeGame:
         """
         intializes 4 private variables to be used throughout the Class
         """
-        self._nums_chosen = []
-        self._current_state = "UNFINISHED"
-        self._player_turn = "first"
-        self._player_score = 0
+        self._nums_chosen:  list[None] = []
+        self._current_state: str = "UNFINISHED"
+        self._player_turn: str = "first"
+        self._player_score: int = 0
 
     def get_current_state(self) -> None:
         """
@@ -46,9 +46,9 @@ class AddThreeGame:
         returns array of player choices for first or second player, depending on instance of player turn
         """
         if self._player_turn == "first":
-            n = 0
+            n: int = 0
         elif self._player_turn == "second":
-            n = 1
+            n: int = 1
 
         return self._nums_chosen[n::2]
 
@@ -73,26 +73,29 @@ class AddThreeGame:
         else:
             self._player_turn = "first"
 
-    def _check_score(self, arr) -> bool:
+    def _check_score(self, arr: list[int]) -> bool:
         if len(arr) < 3:
             return False
 
-        choices = set(arr)
+        choices: list[int] = set(arr)
+        i: int
         for i in range(len(arr) - 1):
+            j: int
             for j in range(i + 1, len(arr)):
-                solution = 15 - (arr[i] + arr[j])
+                solution: int = 15 - (arr[i] + arr[j])
 
             if solution in choices and solution not in [arr[i], arr[j]]:
                 return True
             else:
                 return False
 
-    def make_move(self, player, num_choice):
+    def make_move(self, player: str, num_choice: int):
         """
         public method that allows players to interact with the game
         Input: takes a player variable either "first" or "second" and an integer from 1-9
         Output: Returns True if rules of game are met.
         """
+        self._current_state: str
         if self._current_state != "UNFINISHED":
             return False
 

@@ -4,14 +4,14 @@
 from array import array
 
 
-def find_median(some_nums) -> float:
+def find_median(some_nums: list[int]) -> float:
     """
     Sorts a list of numbers and returns the median value
     """
     some_nums.sort()
-    array_length = len(some_nums)
+    array_length: int = len(some_nums)
 
-    mid_index = int(array_length / 2)
+    mid_index: int = int(array_length / 2)
 
     if array_length % 2 == 0:
         mid_index_alt = int((array_length / 2) - 1)
@@ -21,4 +21,4 @@ def find_median(some_nums) -> float:
 
 
 list_of_nums: list[int] = [13, 7, -3, 82, 4]
-result = find_median(list_of_nums)
+result: float = find_median(list_of_nums)

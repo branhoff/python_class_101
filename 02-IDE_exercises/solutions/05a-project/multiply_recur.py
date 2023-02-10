@@ -3,7 +3,7 @@
 # Description: write a function that uses recursive iteration to multiply two positive integers
 #              with addition
 
-def multiply(multiplier, multiplicand) -> int:
+def multiply(multiplier: int, multiplicand: int) -> int:
     """
     Takes in two positive integers and multiplies them by recursively adding the int multiplicand int multiplier times.
     """
@@ -13,6 +13,6 @@ def multiply(multiplier, multiplicand) -> int:
         return multiply(multiplier - 1, multiplicand) + multiplicand
 
 
-multiplier: int = int(input("Please enter a multiplier: "))
-multiplicand: int = int(input("Please enter a multiplicand: "))
-print("The result is: ", multiply(multiplier, multiplicand))
+num1: int = int(input("Please enter a multiplier: "))
+num2: int = int(input("Please enter a multiplicand: "))
+print("The result is: ", multiply(num1, num2))
