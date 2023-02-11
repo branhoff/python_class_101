@@ -54,6 +54,7 @@ class BuildersGame:
         row: int
         row = 0
         print("  ", 0, "", 1, "", 2, "", 3, "", 4, )
+        line: int
         for line in self._board:
             print(row, line)
             row += 1

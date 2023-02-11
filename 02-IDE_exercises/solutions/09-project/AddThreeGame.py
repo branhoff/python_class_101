@@ -22,7 +22,7 @@ class AddThreeGame:
         """
         intializes 4 private variables to be used throughout the Class
         """
-        self._nums_chosen:  list[None] = []
+        self._nums_chosen:  list[int] = []
         self._current_state: str = "UNFINISHED"
         self._player_turn: str = "first"
         self._player_score: int = 0
@@ -35,7 +35,7 @@ class AddThreeGame:
         """
         return self._current_state
 
-    def get_player_turn(self) -> None:
+    def get_player_turn(self) -> str:
         """
         returns player turn private variable
         """

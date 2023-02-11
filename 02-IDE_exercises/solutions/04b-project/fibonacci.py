@@ -2,7 +2,7 @@
 # number for a given 'n' without recursion or the golden ratio.
 
 
-def fib(n) -> int:
+def fib(n: int) -> int:
     """calculate a fibonnaci number given the input 'n' without recursion using the golden ratio"""
 
     prev_num: int = 0

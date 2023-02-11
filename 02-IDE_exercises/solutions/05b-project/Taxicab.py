@@ -7,7 +7,7 @@ class Taxicab:
     """
     Represents a taxicab that tracks the distance traveled when given x and y coordinates
     """
-    def __init__(self, x, y) -> None:
+    def __init__(self, x: float, y: float) -> None:
         """
         Creates a taxicab object with x and y coordiantes and intializes an odometer to 0
         """

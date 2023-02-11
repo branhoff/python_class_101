@@ -1,8 +1,6 @@
 # Author: Brandon Hoffman
 # Date: 10/25/2020
 # Description: Sorts a list of numbers and returns the median number in the list
-from array import array
-
 
 def find_median(some_nums: list[int]) -> float:
     """

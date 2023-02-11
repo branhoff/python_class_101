@@ -2,7 +2,7 @@
 # Date: 10/29/2020
 # Description: Mutates a given list and squares the items in the list
 
-def square_list(lst) -> None:
+def square_list(lst: list[int]) -> None:
     """
     Input: a list of numbers
     Doesn't return anything, mutates given list

@@ -15,7 +15,7 @@ def add_surname(name_list: list[str]) -> list[str]:
 
 
 # Testing the function
-names: list[str] = ["Kiki", "Krystal", "Pavel", "MaryKay", "Annie", "Koala"]
+names: list[str] = ["Kiki", "Krystal", "Pavel", "MaryKay", "Annie", "Koala", "Killer"]
 changed_name_lists: list[str] = add_surname(names)
 name: str
 for name in changed_name_lists:

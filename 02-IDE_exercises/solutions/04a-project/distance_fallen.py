@@ -6,7 +6,7 @@
 time: float = int(input("Please enter an amount of time in second(s): "))
 
 
-def fall_distance(t) -> float:
+def fall_distance(t:int) -> float:
     """takes input in seconds and returns distance object has fallen"""
     g: float = 9.8  # velocity
 
