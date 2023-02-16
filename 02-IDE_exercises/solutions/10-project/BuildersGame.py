@@ -28,24 +28,24 @@ class BuildersGame:
         """
 
         self._current_state: str = "UNFINISHED"
-        self._board: [[int][int]] = [[0, 0, 0, 0, 0],
-                                     [0, 0, 0, 0, 0],
-                                     [0, 0, 0, 0, 0],
-                                     [0, 0, 0, 0, 0],
-                                     [0, 0, 0, 0, 0]]
+        self._board: list[list[int]] = [[0, 0, 0, 0, 0],
+                                        [0, 0, 0, 0, 0],
+                                        [0, 0, 0, 0, 0],
+                                        [0, 0, 0, 0, 0],
+                                        [0, 0, 0, 0, 0]]
 
-        self._x1_position = (0, 0)
-        self._x2_position = (0, 0)
-        self._o1_position = (0, 0)
-        self._o2_position = (0, 0)
+        self._x1_position: tuple[int, int] = (0, 0)
+        self._x2_position: tuple[int, int] = (0, 0)
+        self._o1_position: tuple[int, int] = (0, 0)
+        self._o2_position: tuple[int, int] = (0, 0)
 
-        self._x1_height = self._board[self._x1_position[0]][self._x1_position[1]]
-        self._x2_height = self._board[self._x2_position[0]][self._x2_position[1]]
-        self._o1_height = self._board[self._o1_position[0]][self._o1_position[1]]
-        self._o2_height = self._board[self._o2_position[0]][self._o2_position[1]]
+        self._x1_height: int = self._board[self._x1_position[0]][self._x1_position[1]]
+        self._x2_height: int = self._board[self._x2_position[0]][self._x2_position[1]]
+        self._o1_height: int = self._board[self._o1_position[0]][self._o1_position[1]]
+        self._o2_height: int = self._board[self._o2_position[0]][self._o2_position[1]]
 
-        self._player_turn = "x"
-        self._turn_count = 1
+        self._player_turn: str = "x"
+        self._turn_count: int = 1
 
     def print_board(self) -> None:
         """
@@ -81,10 +81,10 @@ class BuildersGame:
         """
         private method that updates the private player height variables
         """
-        self._x1_height = self._board[self._x1_position[0]][self._x1_position[1]]
-        self._x2_height = self._board[self._x2_position[0]][self._x2_position[1]]
-        self._o1_height = self._board[self._o1_position[0]][self._o1_position[1]]
-        self._o2_height = self._board[self._o2_position[0]][self._o2_position[1]]
+        self._x1_height: int = self._board[self._x1_position[0]][self._x1_position[1]]
+        self._x2_height: int = self._board[self._x2_position[0]][self._x2_position[1]]
+        self._o1_height: int = self._board[self._o1_position[0]][self._o1_position[1]]
+        self._o2_height: int = self._board[self._o2_position[0]][self._o2_position[1]]
 
     def _check_player_turn(self, from_row: int, from_col: int) -> bool:
         """
@@ -151,19 +151,18 @@ class BuildersGame:
         """
         returns True if a space being moved to is occupied by a different piece
         """
-        player_positions: [int, int, int, int] = [self._x1_position, self._x2_position, self._o1_position,
+        player_positions = [self._x1_position, self._x2_position, self._o1_position,
                                                   self._o2_position]
         if (to_row, to_col) in player_positions:
             return True
 
-        player_positions: [int, int, int, int] = [self._x1_position, self._x2_position, self._o1_position,
+        player_positions = [self._x1_position, self._x2_position, self._o1_position,
                                                   self._o2_position]
 
         # If space is not occupied by other player, we need to temporarily imagine moving our piece, so that our
         # original location is available to build on So we'll mutate the player_positions list with an updated
         # position variable without actually changing a position variable
         i: int = 0
-        position: [int, int, int, int]
         for position in player_positions:
             if position == (from_row, from_col):
                 player_positions[i] = (to_row, to_col)
@@ -298,12 +297,12 @@ class BuildersGame:
         else:
 
             if player == "x":
-                self._x1_position = (t1_row, t1_col)
-                self._x2_position = (t2_row, t2_col)
+                self._x1_position: tuple[int, int] = (t1_row, t1_col)
+                self._x2_position: tuple[int, int] = (t2_row, t2_col)
 
             elif player == "o":
-                self._o1_position = (t1_row, t1_col)
-                self._o2_position = (t2_row, t2_col)
+                self._o1_position: tuple[int, int] = (t1_row, t1_col)
+                self._o2_position: tuple[int, int] = (t2_row, t2_col)
 
             self._set_player_turn()
             self._turn_count += 1

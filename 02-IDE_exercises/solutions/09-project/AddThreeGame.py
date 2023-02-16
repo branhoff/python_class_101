@@ -89,7 +89,7 @@ class AddThreeGame:
             else:
                 return False
 
-    def make_move(self, player: str, num_choice: int):
+    def make_move(self, player: str, num_choice: int) -> bool:
         """
         public method that allows players to interact with the game
         Input: takes a player variable either "first" or "second" and an integer from 1-9
