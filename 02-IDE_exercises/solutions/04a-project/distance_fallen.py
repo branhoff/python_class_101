@@ -3,7 +3,7 @@
 # Description: created a function called "fall_distance() that takes an input of seconds and returns
 #              the distance an object has fallen."
 
-time: float = int(input("Please enter an amount of time in second(s): "))
+time: int = int(input("Please enter an amount of time in second(s): "))
 
 
 def fall_distance(t:int) -> float:

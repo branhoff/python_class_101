@@ -90,7 +90,7 @@ class BuildersGame:
         """
         returns a boolean of False if it's not the appropriate players turn
         """
-        player_referenced: str = None
+        player_referenced: str | None = None
         if (from_row, from_col) in [self._x1_position, self._x2_position]:
             player_referenced = 'x'
 
@@ -151,18 +151,19 @@ class BuildersGame:
         """
         returns True if a space being moved to is occupied by a different piece
         """
-        player_positions = [self._x1_position, self._x2_position, self._o1_position,
-                                                  self._o2_position]
+        player_positions: list[tuple[int, int]] = [self._x1_position, self._x2_position, self._o1_position,
+                                                       self._o2_position]
         if (to_row, to_col) in player_positions:
             return True
 
-        player_positions = [self._x1_position, self._x2_position, self._o1_position,
+        player_positions: list[tuple[int, int]] = [self._x1_position, self._x2_position, self._o1_position,
                                                   self._o2_position]
 
         # If space is not occupied by other player, we need to temporarily imagine moving our piece, so that our
         # original location is available to build on So we'll mutate the player_positions list with an updated
         # position variable without actually changing a position variable
         i: int = 0
+        position: int
         for position in player_positions:
             if position == (from_row, from_col):
                 player_positions[i] = (to_row, to_col)

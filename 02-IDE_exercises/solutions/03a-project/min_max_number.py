@@ -23,7 +23,7 @@ else:
     # a while loop
 
     while num_int > 1:
-        n = int(input())  # type: int
+        n: int = int(input())
         if n < min:
             min = n
         if n > max:
