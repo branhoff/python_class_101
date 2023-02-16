@@ -32,7 +32,6 @@ Finally, adding unit tests for users to test their program is a great way to ens
 Overall, there are many ways that people can help contribute to your project and make it a valuable resource for users. By working together and leveraging the skills and expertise of a diverse group of contributors, you can create a high-quality and effective project that helps users learn and grow.
 
 ## TODO:
-* [ ] Update Variable and Assignment Modules to teach and require type hinting
 * [ ] Add exercise to count occurence of vowels in string
 * [ ] Add exercise to count occurence of set of strings in total strings
 * [ ] Add exercise that prints the longest substring of string s in which letters occur in alphabetical order
