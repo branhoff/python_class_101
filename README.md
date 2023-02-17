@@ -8,7 +8,7 @@ You will learn how to use variables, control flow structures, loops, functions, 
 
 So, let's get started!
 
-This project/course consists of two major components:
+This project/course consists primarily of two components:
 * Jupyter Notebooks outlining essential concepts in programming. These are stored in the `01-lesson_notebooks` directory.
 * A corresponding larger project exercise, intended to be built in an IDE (program assumes VS Code), is also included in the `02-IDE_excecises folder`.
 
@@ -18,9 +18,9 @@ Lesson notebooks are arranged by topic denoted with a lesson number like `01a-..
 Each lesson set has a corresponding "IDE Exercise" with the same lesson number that relates to the set of notebooks i.e. `01-...`, `02a-...`, `10-...`, etc. These are projects with a larger scope that you should practice building within in your IDE. I'm generally assuming you're using VS Code as your IDE in the included notes. Each project folder has a `README`, included with the project exercise description.
 
 ## How to get started
-Navigate to the [01-lesson_notebooks/01a-Tools_You_Will_Need.ipynb](01-lesson_notebooks/01a-Tools_You_Will_Need.ipynb) and beginning downloading the various tools. You can then checkout [01-lesson_notebooks/01b-Some_Context.ipynb](01-lesson_notebooks/01b-Some_Context.ipynb) to get an understanding of the basics and WHY we downloaded the tools we did.
+Navigate to the setup workbooks [00a-Mac_Setup.ipynb](01-lesson_notebooks/00a-Mac_Setup.ipynb) and/or the [00b-Windows_Setup.ipynb](01-lesson_notebooks/00b-Windows_Setup.ipynb) and follow the instructions to begin downloading the various tools we recommend. You can then checkout [01a-Some_Context.ipynb](01-lesson_notebooks/01a-Some_Context.ipynb) to get an understanding of the basics and WHY we downloaded the tools we that did.
 
-## How you can help
+## How you can contribute to the project
 There are many ways that people can help contribute to your project. One of the most important ways is by expanding on the explanations and descriptions provided in the project. This can include adding more detailed information and examples, creating diagrams and images to help illustrate key concepts, and providing additional resources and materials for users to reference.
 
 Another way that people can help contribute to your project is by adding project exercises and challenges. These can include coding challenges, quizzes, and other interactive activities that help users test their understanding of the concepts covered in the project.
