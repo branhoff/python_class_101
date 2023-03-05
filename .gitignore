@@ -10,3 +10,9 @@ __pycache__/
 .idea/
 .vscode/
 .python-version
+
+# virtual environments
+.env/
+env/
+.venv/
+venv/
