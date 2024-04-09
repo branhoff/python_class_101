@@ -1,15 +1,15 @@
 # Author: Brandon Hoffman
 # Date: 10/05/2020
-# Description: Guessing game that takes a number to guess and has user contiously 
+# Description: Guessing game that takes a number to guess and has user continuously
 #              make guesses till they get the answer correct
 
 print("Enter the number for the player to guess.")
-solution = int(input())
+solution: int = int(input())
 
 print("Enter your guess.")
-guess = int(input())
+guess: int = int(input())
 
-number_of_guesses = 1
+number_of_guesses: int = 1
 
 while guess != solution:
     if guess > solution:
@@ -19,8 +19,6 @@ while guess != solution:
         print("Too low - try again:")
         guess = int(input())
 
-    number_of_guesses += 1
-
-number_of_guesses +=1
+number_of_guesses += 1
 
 print("You guessed it in", number_of_guesses, "tries.")

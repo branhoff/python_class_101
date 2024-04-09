@@ -1,8 +1,7 @@
-# Author: Brandon Hoffman
-# Date: 11/25/2020
-# Description:     A class called BuildersGame that represents the board for a two-player game (Player X and Player O) that is played on a 5x5 grid. 
-#                  During the game, each players' builders will move around the board and add levels to towers. The winner is the 
-#                  first one to move a builder on top of a 3-story tower.
+# Author: Brandon Hoffman Date: 11/25/2020 Description:     A class called BuildersGame that represents the board for
+# a two-player game (Player X and Player O) that is played on a 5x5 grid. During the game, each players' builders
+# will move around the board and add levels to towers. The winner is the first one to move a builder on top of a
+# 3-story tower.
 
 
 class BuildersGame:
@@ -12,7 +11,7 @@ class BuildersGame:
     first one to move a builder on top of a 3-story tower.
     """
 
-    def __init__(self):
+    def __init__(self) -> None:
         """
         intializes 12 private variables to be used throughout the Class
         _current_state represents the state game as "UNFINISHED", "X_WON, "O_WON"
@@ -28,36 +27,38 @@ class BuildersGame:
         pieces or just do their regular turns
         """
 
-        self._current_state = "UNFINISHED"
-        self._board = [[0, 0, 0, 0, 0],
-                       [0, 0, 0, 0, 0],
-                       [0, 0, 0, 0, 0],
-                       [0, 0, 0, 0, 0],
-                       [0, 0, 0, 0, 0]]
+        self._current_state: str = "UNFINISHED"
+        self._board: list[list[int]] = [[0, 0, 0, 0, 0],
+                                        [0, 0, 0, 0, 0],
+                                        [0, 0, 0, 0, 0],
+                                        [0, 0, 0, 0, 0],
+                                        [0, 0, 0, 0, 0]]
 
-        self._x1_position = (0, 0)
-        self._x2_position = (0, 0)
-        self._o1_position = (0, 0)
-        self._o2_position = (0, 0)
+        self._x1_position: tuple[int, int] = (0, 0)
+        self._x2_position: tuple[int, int] = (0, 0)
+        self._o1_position: tuple[int, int] = (0, 0)
+        self._o2_position: tuple[int, int] = (0, 0)
 
-        self._x1_height = self._board[self._x1_position[0]][self._x1_position[1]]
-        self._x2_height = self._board[self._x2_position[0]][self._x2_position[1]]
-        self._o1_height = self._board[self._o1_position[0]][self._o1_position[1]]
-        self._o2_height = self._board[self._o2_position[0]][self._o2_position[1]]
+        self._x1_height: int = self._board[self._x1_position[0]][self._x1_position[1]]
+        self._x2_height: int = self._board[self._x2_position[0]][self._x2_position[1]]
+        self._o1_height: int = self._board[self._o1_position[0]][self._o1_position[1]]
+        self._o2_height: int = self._board[self._o2_position[0]][self._o2_position[1]]
 
-        self._player_turn = "x"
-        self._turn_count = 1
+        self._player_turn: str = "x"
+        self._turn_count: int = 1
 
-    def print_board(self):
+    def print_board(self) -> None:
         """
         displays board for testing purposes
         """
+        row: int
         row = 0
-        print("  ", 0, "", 1, "", 2, "", 3, "", 4,)
+        print("  ", 0, "", 1, "", 2, "", 3, "", 4, )
+        line: int
         for line in self._board:
             print(row, line)
             row += 1
-        
+
         self._set_player_height()
 
         print()
@@ -66,32 +67,30 @@ class BuildersGame:
         print("o1 piece:", self._o1_position, "height:", self._o1_height)
         print("o2 piece:", self._o2_position, "height:", self._o2_height)
 
-
-    def _set_player_turn(self):
+    def _set_player_turn(self) -> None:
         """
         private method to change the _player_turn variable to the next player
         """
         if self._player_turn == "x":
             self._player_turn = "o"
-        
+
         else:
             self._player_turn = "x"
 
-    def _set_player_height(self):
+    def _set_player_height(self) -> None:
         """
         private method that updates the private player height variables
         """
-        self._x1_height = self._board[self._x1_position[0]][self._x1_position[1]]
-        self._x2_height = self._board[self._x2_position[0]][self._x2_position[1]]
-        self._o1_height = self._board[self._o1_position[0]][self._o1_position[1]]
-        self._o2_height = self._board[self._o2_position[0]][self._o2_position[1]]
+        self._x1_height: int = self._board[self._x1_position[0]][self._x1_position[1]]
+        self._x2_height: int = self._board[self._x2_position[0]][self._x2_position[1]]
+        self._o1_height: int = self._board[self._o1_position[0]][self._o1_position[1]]
+        self._o2_height: int = self._board[self._o2_position[0]][self._o2_position[1]]
 
-
-    def _check_player_turn(self, from_row, from_col):
+    def _check_player_turn(self, from_row: int, from_col: int) -> bool:
         """
         returns a boolean of False if it's not the appropriate players turn
         """
-        player_referenced = None
+        player_referenced: str | None = None
         if (from_row, from_col) in [self._x1_position, self._x2_position]:
             player_referenced = 'x'
 
@@ -101,13 +100,14 @@ class BuildersGame:
         if player_referenced != self._player_turn:
             return False
 
-    def get_current_state(self):
+    def get_current_state(self) -> str:
         """
         returns private _current_state variable
         """
         return self._current_state
 
-    def _check_legal_range(self, from_row, from_col, to_row, to_col, build_row, build_col):
+    def _check_legal_range(self, from_row: int, from_col: int, to_row: int, to_col: int, build_row: int,
+                           build_col: int) -> None:
         """
         returns False if row or column variable is less than 0 or greater than 4
         """
@@ -129,7 +129,8 @@ class BuildersGame:
         elif 4 < build_col or build_col < 0:
             return False
 
-    def _check_legal_move(self, from_row, from_col, to_row, to_col, build_row, build_col):
+    def _check_legal_move(self, from_row: int, from_col: int, to_row: int, to_col: int, build_row: int,
+                          build_col: int) -> None:
         """
         returns False if a move taken is greater than 1 in the respective column or row variable
         """
@@ -145,36 +146,41 @@ class BuildersGame:
         elif abs(to_col - build_col) > 1:
             return False
 
-    def _check_player_occupied(self, from_row, from_col, to_row, to_col, build_row, build_col):
+    def _check_player_occupied(self, from_row: int, from_col: int, to_row: int, to_col: int, build_row: int,
+                               build_col: int) -> None:
         """
         returns True if a space being moved to is occupied by a different piece
         """
-        player_positions = [self._x1_position, self._x2_position, self._o1_position, self._o2_position]
+        player_positions: list[tuple[int, int]] = [self._x1_position, self._x2_position, self._o1_position,
+                                                       self._o2_position]
         if (to_row, to_col) in player_positions:
             return True
 
-        player_positions = [self._x1_position, self._x2_position, self._o1_position, self._o2_position]
+        player_positions: list[tuple[int, int]] = [self._x1_position, self._x2_position, self._o1_position,
+                                                  self._o2_position]
 
-        # If space is not occupied by other player, we need to temporarily imagine moving our piece, so that our original location is available to build on
-        # So we'll mutate the player_positions list with an updated position variable without actually changing a position variable
-        i = 0 
+        # If space is not occupied by other player, we need to temporarily imagine moving our piece, so that our
+        # original location is available to build on So we'll mutate the player_positions list with an updated
+        # position variable without actually changing a position variable
+        i: int = 0
+        position: int
         for position in player_positions:
             if position == (from_row, from_col):
                 player_positions[i] = (to_row, to_col)
                 break
-            
+
             i += 1
 
         if (build_row, build_col) in player_positions:
             return True
 
-    def _check_tower_level(self, from_row, from_col, to_row, to_col):
+    def _check_tower_level(self, from_row: int, from_col: int, to_row: int, to_col: int) -> bool:
         """
         returns True if the height you're moving to less than your the tower height you're moving from is less than 2.
         returns False if diff is 2 or greater
         """
-        from_sq_height = self._board[from_row][from_col]
-        to_sq_height = self._board[to_row][to_col]
+        from_sq_height: int = self._board[from_row][from_col]
+        to_sq_height: int = self._board[to_row][to_col]
 
         if to_sq_height - from_sq_height < 2:
             return True
@@ -182,12 +188,12 @@ class BuildersGame:
         else:
             return False
 
-    def _can_build_tower(self, build_row, build_col):
+    def _can_build_tower(self, build_row: int, build_col: int) -> bool:
         """
         Returns True if square player wants to build on is less than True
         False otherwise
         """
-        build_sq_height = self._board[build_row][build_col]
+        build_sq_height: int = self._board[build_row][build_col]
 
         if build_sq_height < 4:
             return True
@@ -195,7 +201,7 @@ class BuildersGame:
         else:
             return False
 
-    def _set_current_state(self, from_row, from_col, to_row, to_col, build_row, build_col):
+    def _set_current_state(self, from_row: int, from_col: int, to_row: int, to_col: int, build_row: int, build_col: int) -> None:
         """
         sets the current state to X_WON or O_WON if the respective player piece lands on a tower level 3
         """
@@ -211,7 +217,6 @@ class BuildersGame:
         elif (from_row, from_col) == self._o2_position:
             self._o2_position = (to_row, to_col)
 
-
         if self._board[to_row][to_col] >= 3:
             if self._player_turn == 'x':
                 self._current_state = "X_WON"
@@ -221,7 +226,7 @@ class BuildersGame:
 
         self._board[build_row][build_col] += 1
 
-    def _check_legal_inputs(self, from_row, from_col, to_row, to_col, build_row, build_col):
+    def _check_legal_inputs(self, from_row: int, from_col: int, to_row: int, to_col: int, build_row: int, build_col: int) -> bool:
         """
         Compiles conditional methods above. Returns False if inputs are illegal
         """
@@ -236,7 +241,7 @@ class BuildersGame:
 
         elif self._check_player_turn(from_row, from_col) == False:
             return False
-        
+
         elif self._check_legal_move(from_row, from_col, to_row, to_col, build_row, build_col) == False:
             return False
 
@@ -249,8 +254,7 @@ class BuildersGame:
         elif self._can_build_tower(build_row, build_col) == False:
             return False
 
-
-    def initial_placement(self, t1_row, t1_col, t2_row, t2_col, player):
+    def initial_placement(self, t1_row: int, t1_col: int, t2_row: int, t2_col: int, player: str) -> bool:
         """
         Takes in a row and col input for both pieces a player intially places as well as a player value of x or o
         If conditions for intial placement are not met returns False
@@ -280,7 +284,7 @@ class BuildersGame:
 
         if 4 < t1_row or t1_row < 0:
             return False
-        
+
         if 4 < t1_col or t1_col < 0:
             return False
 
@@ -293,19 +297,19 @@ class BuildersGame:
 
         else:
 
-            if player == "x": 
-                self._x1_position = (t1_row, t1_col)
-                self._x2_position = (t2_row, t2_col)
+            if player == "x":
+                self._x1_position: tuple[int, int] = (t1_row, t1_col)
+                self._x2_position: tuple[int, int] = (t2_row, t2_col)
 
             elif player == "o":
-                self._o1_position = (t1_row, t1_col)
-                self._o2_position = (t2_row, t2_col)
+                self._o1_position: tuple[int, int] = (t1_row, t1_col)
+                self._o2_position: tuple[int, int] = (t2_row, t2_col)
 
             self._set_player_turn()
             self._turn_count += 1
             return True
 
-    def make_move(self, from_row, from_col, to_row, to_col, build_row, build_col):
+    def make_move(self, from_row: int, from_col: int, to_row: int, to_col: int, build_row: int, build_col: int) -> bool:
         """
         first calls _check_legal_inputs variable. If inputs are legal, calls the set_current state method, set_player_turn method and increase _turn_count variable
         """
@@ -313,13 +317,9 @@ class BuildersGame:
             return False
 
         else:
-            
+
             self._set_current_state(from_row, from_col, to_row, to_col, build_row, build_col)
             self._set_player_turn()
             self._turn_count += 1
 
             return True
-
-        
-
-
