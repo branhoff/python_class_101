@@ -5,8 +5,8 @@
 
 print("Please enter the temperature in Celsius.")
 
-temp_c = float(input())
-temp_f = (9/5) * temp_c + 32
+temp_c: float = float(input())
+temp_f: float = (9/5) * temp_c + 32
 
 print("The corresponding temperature in Fahrenheit is:")
 print(temp_f)

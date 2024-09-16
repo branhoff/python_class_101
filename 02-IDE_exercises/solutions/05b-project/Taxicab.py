@@ -7,7 +7,7 @@ class Taxicab:
     """
     Represents a taxicab that tracks the distance traveled when given x and y coordinates
     """
-    def __init__(self, x, y):
+    def __init__(self, x: float, y: float) -> None:
         """
         Creates a taxicab object with x and y coordiantes and intializes an odometer to 0
         """
@@ -16,32 +16,32 @@ class Taxicab:
 
         self._odometer = 0
 
-    def get_x_coord(self):
+    def get_x_coord(self) -> float:
         """
         returns the current x coordinate
         """
         return self._x
 
-    def get_y_coord(self):
+    def get_y_coord(self) -> float:
         """
         returns the current y coordinate
         """
         return self._y
 
-    def get_odometer(self):
+    def get_odometer(self) -> float:
         """
         sums the abs value of the change in x and y coordinates
         """
         return self._odometer
 
-    def move_x(self, x_vector):
+    def move_x(self, x_vector: float) -> None:
         """
         takes in a one-dimensional vector and adds it to the x coordiante as its original value and the odometer as an absolute value
         """
         self._x += x_vector
         self._odometer += abs(x_vector)
 
-    def move_y(self, y_vector):
+    def move_y(self, y_vector: float) -> None:
         """
         takes in a one-dimensional vector and adds it to the x coordiante as its original value and the odometer as an absolute value
         """

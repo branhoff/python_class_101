@@ -4,17 +4,21 @@
 #              same process until the result terminates at a value of 1.
 
 
-def hailstone(n):
-    '''takes an integer, 'n' and if even divides by 2 and if odd multiples by 3 and adds 1
-       the result continues until the value reaches 1 and the function terminates and returns the count the number of steps'''
-    count = 0
+def hailstone(n: int) -> int:
+    """takes an integer, 'n' and if even divides by 2 and if odd multiples by 3 and adds 1 the result continues until
+    the value reaches 1 and the function terminates and returns the count the number of steps """
+    count: int = 0
+    n: int
     while n != 1:
         print(count, n)
         if n % 2 == 0:
             n //= 2
         else:
             n = (n * 3) + 1
-            
-        count += 1
 
+        count += 1
     return count
+
+
+number: int = int(input("Please enter a number: "))
+print("The count is: ", hailstone(number))
